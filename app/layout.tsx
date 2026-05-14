@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Court Agent - Real-time Court Occupancy",
-  description: "Track tennis and pickleball court occupancy in real-time.",
+  title: "Seattle Optimizer - Your High-Performance Weekend Guide",
+  description: "Optimize your Seattle weekend with real-time occupancy and status updates for parks, parking, and more.",
 };
 
 export default function RootLayout({

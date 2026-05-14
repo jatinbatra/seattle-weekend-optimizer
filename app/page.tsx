@@ -373,14 +373,14 @@ export default function Home() {
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h1 className="text-lg font-bold text-slate-900">Court Agent</h1>
+                <h1 className="text-lg font-bold text-slate-900">Seattle Optimizer</h1>
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
               </div>
               <p className="text-slate-500 text-[10px] font-bold uppercase tracking-widest">
-                Seattle Intelligence
+                Your High-Performance Weekend Guide
               </p>
             </div>
           </div>
@@ -393,9 +393,19 @@ export default function Home() {
             >
               <RefreshCw className={cn("w-5 h-5", refreshing && "animate-spin")} />
             </button>
-            <div className="hidden sm:flex items-center gap-2 bg-slate-100 px-3 py-1.5 rounded-lg border border-slate-200">
-              <div className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-              <span className="text-[10px] font-bold text-slate-500 uppercase">System Active</span>
+            <div className="hidden sm:flex items-center gap-3 bg-slate-50 px-4 py-2 rounded-xl border border-slate-200 shadow-sm">
+              <div className="flex flex-col items-end">
+                <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Weekend Score</span>
+                <span className="text-sm font-black text-indigo-600 leading-none">94/100</span>
+              </div>
+              <div className="w-px h-8 bg-slate-200 mx-1" />
+              <div className="flex flex-col">
+                <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Optimizer Status</span>
+                <div className="flex items-center gap-1.5">
+                  <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                  <span className="text-[10px] font-black text-emerald-600 uppercase">Peak Performance</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -989,7 +999,7 @@ export default function Home() {
                     activeTab === "Parking" ? filteredParking.length :
                     activeTab === "Hiking" ? filteredHikingData.length :
                     filteredEvents.length
-                  } Intelligence Records
+                  } Optimization Data Points
                 </p>
               </div>
             </motion.div>
@@ -1003,7 +1013,7 @@ export default function Home() {
             </div>
             <h3 className="text-slate-900 font-black text-2xl mb-4">No Facilities Detected</h3>
             <p className="text-slate-500 max-w-sm mx-auto text-lg leading-relaxed">
-              Our intelligence engine couldn't locate active facilities in <span className="text-indigo-600 font-bold">{zipcode}</span>.
+              Our optimization engine couldn't locate active facilities in <span className="text-indigo-600 font-bold">{zipcode}</span>.
             </p>
             <button 
               onClick={() => setZipInput("98103")}
@@ -1034,8 +1044,8 @@ export default function Home() {
               <Activity className="w-6 h-6 text-indigo-600" />
             </div>
             <div>
-              <span className="font-black text-xl tracking-tighter text-slate-900">Court Agent</span>
-              <p className="text-slate-400 text-[10px] font-black uppercase tracking-[0.2em] mt-1">Intelligence Division</p>
+              <span className="font-black text-xl tracking-tighter text-slate-900">Seattle Optimizer</span>
+              <p className="text-slate-400 text-[10px] font-black uppercase tracking-[0.2em] mt-1">Weekend Engineering</p>
             </div>
           </div>
           
